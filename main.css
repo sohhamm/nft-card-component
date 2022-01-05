@@ -68,8 +68,12 @@ h1 {
   color: var(--cyan);
 }
 
-/* .clock {
-} */
+.eth,
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .user {
   display: flex;
@@ -91,4 +95,8 @@ h1 {
 
 .user > p > span {
   color: white;
+}
+
+.icon {
+  margin-right: 5px;
 }
