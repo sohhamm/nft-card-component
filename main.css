@@ -45,6 +45,7 @@ h1 {
 
 .nft-img {
   border-radius: 1em;
+  width: 100%;
 }
 
 .info {
@@ -99,4 +100,9 @@ h1 {
 
 .icon {
   margin-right: 5px;
+}
+
+.title:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
