@@ -20,6 +20,7 @@ body {
   background-color: var(--main-bg);
   font-size: var(--primary-font-size);
   height: 100vh;
+  width: 100%;
 }
 .box {
   display: flex;
@@ -98,6 +99,10 @@ h1 {
   color: white;
 }
 
+.user > p > span:hover {
+  color: var(--cyan);
+}
+
 .icon {
   margin-right: 5px;
 }
@@ -105,4 +110,37 @@ h1 {
 .title:hover {
   color: var(--cyan);
   cursor: pointer;
+}
+
+.img-box {
+  width: 100%;
+  /* position: absolute; */
+}
+
+.img-box::before {
+  content: '';
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: var(--cyan);
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  z-index: 1;
+}
+
+.img-box:hover:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan);
+  opacity: 1;
+}
+
+.img-box > img {
+  backface-visibility: hidden;
+  vertical-align: top;
+  max-width: 100%;
 }
