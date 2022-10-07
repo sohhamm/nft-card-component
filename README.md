@@ -1,1 +1,3 @@
-# NFT preview card component solution
+# NFT preview card component
+
+![Preview](desktop-preview.jpg)
